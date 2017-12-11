@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+@import
+    'abstract/base',
+    'abstract/variables',
+    'abstract/mixin',
+    'abstract/helper';
+@import
+    'layout/header';
+@import
+    'component/task',
+    'component/modal',
+    'component/toast',
+    'component/loader',
+    'component/button';
+@import
+    'pages/landing';
+
+body{
+    margin: 0;
+    padding: 0;
+    background:$bg-clr;
+    font-family:$lato,$open-sans;
+}

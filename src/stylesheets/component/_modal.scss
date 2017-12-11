@@ -1,0 +1,27 @@
+.overlay {
+    @extend .fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    @extends .pointer;
+    @extend .block;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 60%;
+    height: 200px;
+    }
+.modal-close{
+    color:$dark-clr;
+    font-size:$med-text-size;
+    @extend .right
+}
+

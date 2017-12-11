@@ -1,0 +1,62 @@
+.toast {
+    border-radius: 5px;
+    padding: 10px;
+    height:60px;
+    @extend .fixed;
+    z-index: 1;
+    bottom: 100px;
+    right: 100px;
+    width: 40%;
+    animation: fadein 1s;
+    &-text{
+        @extend .vmiddle;
+        line-height:30px;
+    }
+    &-success {
+        @include color_block($success-bg-clr,$success-font-clr)
+        border: 1px solid $success-font-clr;
+    }
+
+    &-error {
+        @include color_block($error-bg-clr,$error-font-clr)
+        border: 1px solid $error-font-clr;
+    }
+}
+.close {
+    font-size: 28px;
+    font-weight: bold;
+    line-height:30px;
+    @extend .right;
+    opacity:1;
+    &:hover,
+    &:focus{
+        color:$dark-clr;
+        @extend .pointer;
+        text-decoration:none;
+    }
+    &-success{
+        color:$success-font-clr
+    }
+    &-error{
+        color:$error-font-clr
+    }
+}
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}

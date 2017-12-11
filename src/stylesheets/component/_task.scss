@@ -1,0 +1,44 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+    &-task {
+        height: 200px;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+        background: $light-clr;
+        color: $dark-clr;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        @extend .text-uppercase;
+        border-radius: 5px;
+        border-bottom: 3px solid #e6eaee;
+        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+        &:hover{
+            box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
+        }
+    }
+}
+
+.task-title{
+    border: 0;
+    color: $dark-clr;
+    letter-spacing: 1.2px;
+    @extend .text-uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    word-wrap: break-word;
+    resize: none;
+    max-height: 150px;
+    width: 90%;
+    &:focus{
+        border: 1px solid $dark-clr;
+        outline-color: transparent;
+        outline-style: none;
+    }
+    &:hover {
+        @extends .pointer;
+    }
+}
+
+

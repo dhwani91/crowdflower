@@ -1,0 +1,17 @@
+.btn{
+    @extend .pointer;
+    padding: 15px 20px 15px 20px;
+    margin: 4px;
+    font-size:$small-text-size;
+    font-weight: 500;
+    @include rounded(4px);
+    &:disabled{
+        cursor: not-allowed;
+    }
+    &-save{
+        @include color_block($green-clr,$light-clr);
+    }
+    &-add{
+        @include color_block($dark-clr,$light-clr)
+    }
+}

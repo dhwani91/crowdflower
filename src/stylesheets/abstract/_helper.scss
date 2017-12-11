@@ -1,0 +1,49 @@
+/* cursor */
+.default {
+    cursor: default
+}
+.pointer {
+    cursor: pointer
+}
+.full-height {
+    height: 100%
+}
+.full-width {
+    width: 100%
+}
+.full {
+    @extend .full-height;
+    @extend .full-width;
+}
+.vmiddle{
+    vertical-align:middle;
+}
+
+/* display */
+.block {
+    display: block
+}
+/* float */
+.clear {
+    clear: both
+}
+.left {
+    float: left
+}
+.right {
+    float: right
+}
+
+/* position */
+.absolute {
+    position: absolute
+}
+.fixed {
+    position: fixed
+}
+.relative {
+    position: relative
+}
+.text-uppercase{
+    text-transform:uppercase
+}

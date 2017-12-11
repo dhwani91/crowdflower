@@ -1,0 +1,41 @@
+// For Round boreder
+@mixin rounded($radius) {
+    -webkit-border-radius:$radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// background and text color
+@mixin color_block($bg-color,$text-color){
+    background: $bg-color;
+    color:$text-color;
+}
+
+@mixin animate($name, $duration, $iteration) {
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    animation-duration: $duration;
+
+    -webkit-animation-iteration-count: $iteration;
+    -moz-animation-iteration-count: $iteration;
+    animation-iteration-count: $iteration;
+
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+    animation-name: $name;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
